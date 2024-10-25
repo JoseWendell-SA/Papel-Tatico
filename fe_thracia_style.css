@@ -3,117 +3,51 @@ body
     background-color: black;
 }
 
-#fethracia_title_1
+.fethracia_title_l
 {
-    padding-left: 415px;
+    padding-left: 25%;
     color: white;
 }
 
-#fethracia_text_1
+.fethracia_text_l
 {
     text-align: justify;
     font-size: 20px;
     color: white;
     position: relative;
-    width: 550px;
-    height: 125px;
+    width: 40%;
 }
 
-#fethracia_textBackground_Left_3l
-{
-    background-image: url("ThraciaTextBackground.png");
-    background-repeat: no-repeat;
-    background-size: 44% 80%;
-    background-position: 65px;
-    padding-top: 40px;
-    padding-left: 125px;
-}
-
-#fethracia_textBackground_Left_4l
+.fethracia_textBackground_l
 {
     background-image: url("ThraciaTextBackground.png");
     background-repeat: no-repeat;
     background-size: 44% 100%;
-    background-position: 65px;
-    padding-top: 25px;
-    padding-left: 125px;
+    background-position: left;
+    padding: 30px;
 }
 
-#fethracia_textBackground_Left_5l
+.fethracia_title_r
 {
-    background-image: url("ThraciaTextBackground.png");
-    background-repeat: no-repeat;
-    background-size: 44% 100%;
-    background-position: 65px;
-    padding-top: 30px;
-    padding-left: 125px;
-    padding-bottom: 5px;
-}
-
-#fethracia_textBackground_Left_7l
-{
-    background-image: url("ThraciaTextBackground.png");
-    background-repeat: no-repeat;
-    background-size: 44% 100%;
-    background-position: 65px;
-    padding-top: 35px;
-    padding-left: 125px;
-    padding-bottom: 40px;
-}
-
-#fethracia_title_2
-{
-    padding-left: 550px;
+    padding-left: 65%;
     color: white;
 }
 
-#fethracia_text_2
+.fethracia_text_r
 {
     text-align: justify;
     font-size: 20px;
     color: white;
     position: relative;
-    width: 550px;
-    height: 125px;
-    padding-top: 50px;
-    padding-left: 250px;
+    width: 40%;
+    left: 60%;
 }
 
-#fethracia_textBackground_Right_l3
-{
-    background-image: url("ThraciaTextBackgroundReversed.png");
-    background-repeat: no-repeat;
-    background-size: 42% 75%;
-    background-position: 400px;
-    padding-top: 1px;
-    padding-left: 200px;
-}
-
-#fethracia_textBackground_Right_l4
+.fethracia_textBackground_r
 {
     background-image: url("ThraciaTextBackgroundReversed.png");
     background-repeat: no-repeat;
     background-size: 42% 100%;
-    background-position: 400px;
-    padding-left: 200px;
-}
-
-#fethracia_textBackground_Right_l6
-{
-    background-image: url("ThraciaTextBackgroundReversed.png");
-    background-repeat: no-repeat;
-    background-size: 42% 100%;
-    background-position: 400px;
-    padding-left: 200px;
-    padding-bottom: 30px;
-}
-
-#fethracia_textBackground_Right_l9
-{
-    background-image: url("ThraciaTextBackgroundReversed.png");
-    background-repeat: no-repeat;
-    background-size: 42% 100%;
-    background-position: 400px;
-    padding-left: 200px;
-    padding-bottom: 105px;
+    background-position: right;
+    padding: 30px;
 }
