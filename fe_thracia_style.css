@@ -1,11 +1,15 @@
 body
 {
     background-color: black;
+    background-image: url("fe776ch1.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fethracia_title_l
 {
-    padding-left: 25%;
+    padding-left: 35%;
     color: white;
 }
 
@@ -23,13 +27,14 @@ body
     background-image: url("ThraciaTextBackground.png");
     background-repeat: no-repeat;
     background-size: 44% 100%;
-    background-position: left;
+    background-position: 20%;
     padding: 30px;
+    padding-left: 16%;
 }
 
 .fethracia_title_r
 {
-    padding-left: 65%;
+    padding-left: 50%;
     color: white;
 }
 
@@ -48,6 +53,7 @@ body
     background-image: url("ThraciaTextBackgroundReversed.png");
     background-repeat: no-repeat;
     background-size: 42% 100%;
-    background-position: right;
+    background-position: 80%;
     padding: 30px;
+    padding-right: 16%;
 }
