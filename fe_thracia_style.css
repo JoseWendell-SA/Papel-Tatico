@@ -293,6 +293,11 @@ table, th, td
         display: block;
     }
 
+    .GameCover
+    {
+        max-width: 300px;
+    }
+
     .text
     {
         font-size: smaller;
