@@ -1,59 +1,306 @@
 body
 {
-    background-color: black;
-    background-image: url("fe776ch15.png");
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: cover;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    margin: 0;
 }
 
-.fethracia_title_l
+table, th, td
 {
-    padding-left: 35%;
+    border: 1px solid white;
+}
+
+#ContainerGeral
+{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 20px;
+}
+
+.Cover
+{
+    min-width: 150px;
+    max-width: 150px;
+    margin: 10px;
+}
+
+.Atalho
+{
+    border-bottom: double;
+    border-color: white;
+    border-spacing: 20cap;
+    width: 100%;
+    padding-top: 13%;
+    position: sticky;
+    left: 0;
+    top: 10px;
+    /* height: 240px;
+    overflow-y: auto; */
+}
+
+.BlankSpace
+{
+    padding-top: 2%;
+}
+
+.CharacterIcon
+{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(14, 14, 14, 0.8);
+    cursor: pointer;
+}
+
+.CharacterContainer
+{
+    text-align: center;
+    margin-left: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.CharName
+{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(79, 151, 233);
+}
+
+.Content
+{
+    margin-top: 10%;
+    background-color: rgba(14, 14, 14, 0.45);
+    backdrop-filter: blur(5px);
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.GameContainer
+{
+    text-align: left;
+    margin-left: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.GameCover
+{
+    margin-top: 20px;
+    max-width: 350px;
+}
+
+.GameImage
+{
+    margin-left: 5%;
+    max-height: 300px;
+    max-width: 600px;
+    border-style: solid;
+    border-color: white;
+}
+
+.GameTitle
+{
+    font-size: 50px;
     color: white;
 }
 
-.fethracia_text_l
+.GameTitleImage
 {
-    text-align: justify;
-    font-size: 20px;
-    color: white;
+    width: 60%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.GeneralInfo
+{
+    background-color: rgba(14, 14, 14, 0.5);
+    background-size: cover;
+    text-align: center;
+    max-width: 400px;
+    max-height: 500px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-style: solid;
+    border-color: white;
+    float: right;
+}
+
+.Navigation
+{
+    background-color: rgba(14, 14, 14, 0.8);
+    border-style: solid;
+    border-color: white;
+    backdrop-filter: blur(5px);
+}
+
+.Portrait
+{
+    margin-top: -10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    min-width: 72px;
+    min-height: 72px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 0.808);
+    background-color: rgba(14, 14, 14, 0.8);
+    transition: 300ms;
+}
+
+.Portrait:hover
+{
+    min-height: 96px;
+    min-width: 96px;
+    transition: 300ms;
+}
+
+.SomeInfo
+{
+    text-align: left;
     position: relative;
-    width: 40%;
-}
-
-.fethracia_textBackground_l
-{
-    background-image: url("ThraciaTextBackground.png");
-    background-repeat: no-repeat;
-    background-size: 44% 100%;
-    background-position: 20%;
-    padding: 30px;
-    padding-left: 16%;
-}
-
-.fethracia_title_r
-{
-    padding-left: 50%;
+    font-size: 17px;
     color: white;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.fethracia_text_r
+.SpriteIcon
 {
-    text-align: justify;
-    font-size: 20px;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.TextImageFormat
+{
+    float: right;
+}
+
+.TablesInGeneral
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.TablesInGeneral tr
+{
+    background-color: rgba(14, 14, 14, 0.75);
+}
+
+.TablesInGeneral tr:nth-child(odd)
+{
+    background-color: rgba(14, 14, 14, 0.9);
+}
+
+.TablesInGeneral td
+{
+    padding: 5px;
+}
+
+.Table3Columns tr>td
+{
+    width: calc(100%/3);
+}
+
+#Top
+{
+    background-color: rgba(14, 14, 14, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: white;
     color: white;
+    z-index: 90;
+    width: 100%;
+    height: 7%;
+}
+
+.text
+{
+    font-size: larger;
     position: relative;
-    width: 40%;
-    left: 60%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
-.fethracia_textBackground_r
+.title
 {
-    background-image: url("ThraciaTextBackgroundReversed.png");
-    background-repeat: no-repeat;
-    background-size: 42% 100%;
-    background-position: 80%;
-    padding: 30px;
-    padding-right: 16%;
+    font-size: 24px;
+    padding-left: 5%;
+    color: white;
+}
+
+.Redirect
+{
+    color: white;
+}
+
+.TableDetailsSummary
+{
+    color: white;
+    padding: 10px 5%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Next, #Previous, #AudioPlayerIcon
+{
+    cursor: pointer;
+}
+
+.floatRight
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.floatRight .audioBox
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#AudioBox
+{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .TablesInGeneral
+    {
+        overflow-x: auto;
+        margin-right: 0px;
+    }
+
+    #ContainerGeral
+    {
+        display: block;
+    }
+
+    .text
+    {
+        font-size: smaller;
+    }
+
+    .SpriteIcon
+    {
+        max-width: 16px;
+        max-height: 16px;
+    }
 }

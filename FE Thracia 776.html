@@ -4,48 +4,2572 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fe_thracia_style.css">
-        <script src="javascript.js"></script>
     </head>
     <body>
-        <div>
-            <h1 class="fethracia_title_l">Resumo Geral</h1>
-            <div class="fethracia_textBackground_l"><p class="fethracia_text_l">Fire Emblem Thracia 776 é um rpg japonês tático desenvolvido pela Intelligent Systems e publicado pela Nintendo, é o terceiro e último título lançado para Super Famicon, e também o último da franquia desenvolvido pelo criador da série, Shouzou Kaga.</p></div>
-            <br><br>
-            <h1 class="fethracia_title_r">Resumo da História</h1>
-            <div class=fethracia_textBackground_r><p class="fethracia_text_r">
-            Fire Emblem Thracia 776 se no mesmo lugar e tempo que o "Fire Emblem Genealogy of the Holy War",
-            entre os capítulos 5 e 8. Este Fire Emblem segue a história de Leif, herdeiro de Leonster, no país de Thracia.
-            No ano de 761 no calendário de Grannvale, ocorreu o Massacre Aed, causado pelo país de Thracia, que resultou na morte dos
-            pais de Leif, o reino de Thracia, liderado por Travant, capturou Leonster, entretanto, ele foi imediatamente derrotado pelo
-            império de Grannvale, sendo forçado a ceder ao controle de Friege. Durante o ataque de Thracia, Leif foi resgatado por Finn,
-            que fugiu para o suldeste de Thracia, chegando a pequena vila, Fiana.</p></div>
+        <div id="Top">
+            <a href="index.html"><img src="PapelTatico.webp" style="max-width: 48px; float: left;"></a><br>
+            <div class="text">
+                <a href="index.html"><span>Papel Tático</span></a>
+                <div class="floatRight" style="top: 0; right: 0; position: fixed;">
+                    <div id="AudioBox">
+                        <center>
+                        <span id="SongTitle">Thracia 776 - The Beginning</span>
+                        <div>
+                            <span id="Previous">Anterior</span>
+                            <img src="Play.webp" id="AudioPlayerIcon" class="SpriteIcon">
+                            <span id="Next">Próximo</span>
+                        </div>
+                        <audio id="CurrentSong" src="FE5Ost/Thracia 776 - The Beginning.mp3" loop></audio>
+                        </center>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br><br>
-        <div>
-            <h1 class="fethracia_title_l">Mecânicas</h1>
-            <div class=fethracia_textBackground_l><p class="fethracia_text_l">Thracia 776, foi o jogo da franquia que introduziu diversas mecânicas novas como a de captura, névoa de guerra, sistema de
-            fuga, sistema de fadiga e capítulos gaiden.</p></div><br><br>
-            <h2 class="fethracia_title_r">Sistema de Captura</h2>
-            <div class=fethracia_textBackground_r><p class="fethracia_text_r">O Sistema de captura permite ao jogador entrar em combate, com os status reduzidos, contra um inimigo, caso derrote-o, capturará
-            a unidade adversária e poderá roubar seus itens. Chefes capturados e soltos, terão uma frase de morte diferente. Inimigos que
-            não possuem armas, como padres, não entrarão em combate, e serão capturados imediatamente.</p></div><br><br>
-            <h2 class="fethracia_title_l">Resgate</h2>
-            <div class=fethracia_textBackground_l><p class="fethracia_text_l">Junto ao sistema de captura, Thracia 776 também introduziu o sistema de resgate, o qual permite que uma unidade com BLD maior
-            possa carregar unidades com BLD menor que ela. Enquanto carregando, a unidade sofrerá penalidade em todos os status, e a unidade
-            carregada ficará segura do combate, porém caso aquele que está carregando seja derrotado, a unidade carregada será exposta. Montarias
-            e unidades com BLD máxima não podem ser carregados.</p></div><br><br>
-            <h2 class="fethracia_title_r">Névoa de Guerra</h2>
-            <div class=fethracia_textBackground_r><p class="fethracia_text_r">Também conhecido como combate noturno, a névoa de guerra é um novo elemento presente em diversos capítulos do jogo, ele escurece
-            todo o mapa, e as unidades poderão ver apenas alguns blocos adjacentes.</p></div><br><br>
-            <h2 class="fethracia_title_l">Sistema de Fadiga</h2>
-            <div class=fethracia_textBackground_l><p class="fethracia_text_l">Neste sistema, quando uma unidade realiza uma ação, ela receberá vários pontos de fadiga, quando esses pontos são maiores que
-            a saúde máxima da unidade, ela não poderá participar do próximo capítulo. A fadiga resetará caso a unidade não participe do próximo
-            capítulo, ou caso utiliza o drink de stamina.</p></div><br><br>
-            <h2 class="fethracia_title_r">Capítulos Gaiden</h2>
-            <div class=fethracia_textBackground_r><p class="fethracia_text_r">Esses capítulos são acessados caso o jogador complete certas condições, neles, o jogador poderá adquirir mais itens, experiência
-            para as suas unidades e algum personagem novo.</p></div><br><br>
+        <div id="ContainerGeral">
+            <div class="Navigation">
+                <div class="Atalho">
+                    <div style="margin-left: 15px; margin-top: 7.5%;">
+                        <a href="#Resumo" title="Resumo" class="Redirect">Sobre o Jogo</a><br>
+                        <a href="#Historia" title="Historia" class="Redirect">História</a><br>
+                        <a href="#Mecanicas" title="Mecanicas" class="Redirect">Mecânicas</a><br>
+                        <a href="#Captura" title="Captura" class="Redirect">Sistema de Captura</a><br>
+                        <a href="#Resgate" title="Resgate" class="Redirect">Resgate</a><br>
+                        <a href="#FOW" title="FOW" class="Redirect">Nevoa de Guerra</a><br>
+                        <a href="#Fadiga" title="Fadiga" class="Redirect">Sistema de Fadiga</a><br>
+                        <a href="#Gaiden" title="Gaiden" class="Redirect">Capítulos Gaiden</a><br>
+                        <a href="#Personagens" title="Personagens" class="Redirect">Personagens</a>
+                        <ul>
+                            <li><a href="#Per_Jogáveis" title="Per_Jogáveis" class="Redirect">Jogáveis</a></li>
+                            <li><a href="#Per_Não_Jogáveis" title="Per_Não_Jogáveis" class="Redirect">Não Jogáveis</a></li>
+                            <li><a href="#Antagonistas" title="Antagonistas" class="Redirect">Antagonistas Primários</a></li>
+                            <li><a href="#Antag_Secundário" title="Antag_Secundário" class="Redirect">Antagonistas Secundários</a></li>
+                            <li><a href="#Antag_Terciário" title="Antag_Terciário" class="Redirect">Antagonistas Terciários</a></li>
+                        </ul>
+                        <a href="#Itens" title="Itens" class="Redirect">Itens</a>
+                        <ul>
+                            <li><a href="#Espadas" title="Swords" class="Redirect">Espadas</a></li>
+                            <li><a href="#Lanças" title="Lanças" class="Redirect">Lanças</a></li>
+                            <li><a href="#Machados" title="Machados" class="Redirect">Machados</a></li>
+                            <li><a href="#Arcos" title="Arcos" class="Redirect">Arcos</a></li>
+                            <li><a href="#Cajados" title="Cajados" class="Redirect">Cajados</a></li>
+                            <li><a href="#Fogo" title="Magia de Fogo" class="Redirect">Magia de Fogo</a></li>
+                            <li><a href="#Trovão" title="Magia de Trovão" class="Redirect">Magia de Trovão</a></li>
+                            <li><a href="#Vento" title="Magia de Vento" class="Redirect">Magia de Vento</a></li>
+                            <li><a href="#Luz" title="Magia de Luz" class="Redirect">Magia de Luz</a></li>
+                            <li><a href="#Escuridão" title="Magia Negra" class="Redirect">Magia Negra</a></li>
+                        </ul>
+                        <a href="#Classes" title="Classes" class="Redirect">Classes</a><br>
+                        <ul>
+                            <li><a href="#Classes_Jogáveis" title="Classes_Jogáveis" class="Redirect">Classes Jogáveis</a></li>
+                            <li><a href="#Classes_Não_Jogáveis" title="Classes_Não_Jogáveis" class="Redirect">Classes Não Jogáveis</a></li>
+                            <li><a href="#Classes_Não_Utilizadas" title="Classes_Não_Utilizadas" class="Redirect">Classes Não Utilizadas</a></li>
+                        </ul>
+                        <a href="#Habilidades" title="Habilidades" class="Redirect">Habilidades</a><br>
+                        <a href="#Curiosidades" title="Curiosidades" class="Redirect">Curiosidades</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Content">
+                <center><h1 class="GameTitle">Fire Emblem Thracia 776</h1></center>
+                <div id="Container">
+                    <div class="GeneralInfo">
+                        <img src="FEThracia.jpg" class="GameCover"><br>
+                        <p class="SomeInfo">Nome (JP): ファイアーエムブレムトラキア776<br>
+                            Desenvolvedor: Intelligent Systems<br>
+                            Editor: Nintendo<br>
+                            Diretor: Shouzou Kaga<br>
+                            Produtor: Takehiro Izushi<br>
+                            Designer: Shouzou Kaga, Mayumi Hirota<br>
+                            Música: Yuka Tsujiyoko<br>
+                            Plataforma: SNES - 21 de Janeiro de 2000<br>
+                            Wii - 15 de Julho de 2008<br>
+                            Wii U - 10 de Julho de 2013</p>
+                    </div>
+                    <h1 class="title" id="Resumo">Sobre o Jogo</h1>
+                    <p class="text">Fire Emblem Thracia 776 é um rpg japonês tático desenvolvido pela Intelligent Systems e publicado pela Nintendo, é o terceiro e último título lançado para Super Famicon, e também o último da franquia desenvolvido pelo criador da série, Shouzou Kaga.</p>
+                    <br><br>
+                    <h1 class="title" id="Historia">História</h1>
+                    <p class="text">
+                    Fire Emblem Thracia 776 se passa no mesmo lugar e tempo que o "Fire Emblem Genealogy of the Holy War",
+                    entre os capítulos 5 e 8. Este Fire Emblem segue a história de Leif, herdeiro de Leonster, no país de Thracia.
+                    No ano de 761 no calendário de Grannvale, ocorreu o Massacre Aed, causado pelo país de Thracia, que resultou na morte dos
+                    pais de Leif, o reino de Thracia, liderado por Travant, capturou Leonster, entretanto, ele foi imediatamente derrotado pelo
+                    império de Grannvale, sendo forçado a ceder ao controle de Friege. Durante o ataque de Thracia, Leif foi resgatado por Finn,
+                    que fugiu para o suldeste de Thracia, chegando a pequena vila, Fiana.</p>
+                    <h1 class="title" id="Mecanicas">Mecânicas</h1>
+                    <p class="text">Thracia 776, foi o jogo da franquia que introduziu diversas mecânicas novas como a de captura, névoa de guerra, sistema de
+                    fuga, sistema de fadiga e capítulos gaiden.</p><br><br>
+    
+                    <h2 class="title" id="Captura">Sistema de Captura</h2>
+                    <p class="text">O Sistema de captura permite ao jogador entrar em combate, com os status reduzidos, contra um inimigo, caso derrote-o, capturará
+                    a unidade adversária e poderá roubar seus itens. Chefes capturados e soltos, terão uma frase de morte diferente. Inimigos que
+                    não possuem armas, como padres, não entrarão em combate, e serão capturados imediatamente.</p>
+                    <img src="Capture-Example.gif" class="GameImage"><br><br>
+                    <h2 class="title" id="Resgate">Resgate</h2>
+                    
+                    <p class="text">Junto ao sistema de captura, Thracia 776 também introduziu o sistema de resgate, o qual permite que uma unidade com BLD maior
+                    possa carregar unidades com BLD menor que ela. Enquanto carregando, a unidade sofrerá penalidade em todos os status, e a unidade
+                    carregada ficará segura do combate, porém caso aquele que está carregando seja derrotado, a unidade carregada será exposta. Montarias
+                    e unidades com BLD máxima não podem ser carregados.</p>
+                    <img src="Rescue-Example.gif" class="GameImage"><br><br>
+                    <h2 class="title" id="FOW">Névoa de Guerra</h2>
+                    
+                    <p class="text">Também conhecido como combate noturno, a névoa de guerra é um novo elemento presente em diversos capítulos do jogo, ele escurece
+                    todo o mapa, e as unidades poderão ver apenas alguns blocos adjacentes.</p><br><br>
+                    <img src="FogOfWar-Example.gif" class="GameImage"><br><br>
+                    <h2 class="title" id="Fadiga">Sistema de Fadiga</h2>
+                    
+                    <p class="text">Neste sistema, quando uma unidade realiza uma ação, ela receberá vários pontos de fadiga, quando esses pontos são maiores que
+                    a saúde máxima da unidade, ela não poderá participar do próximo capítulo. A fadiga resetará caso a unidade não participe do próximo
+                    capítulo, ou caso utiliza o drink de stamina.</p><br><br>
+                    <h2 class="title" id="Gaiden">Capítulos Gaiden</h2>
+                    
+                    <p class="text">Esses capítulos são acessados caso o jogador complete certas condições, neles, o jogador poderá adquirir mais itens, experiência
+                    para as suas unidades e algum personagem novo.</p><br><br>
+    
+                    <h1 id="Personagens" class="title">Personagens</h1>
+                    <details>
+                        <summary id="Per_Jogáveis" class="TableDetailsSummary">Jogáveis</summary>
+                        <div class="CharacterContainer">
+                            <div class="CharacterIcon"><p class="CharName">Leif</p><img src="FE5Portraits/Leif_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Fin</p><img src="FE5Portraits/Fin_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Eyvel</p><img src="FE5Portraits/Eyvel_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Othin</p><img src="FE5Portraits/Othin_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Halvan</p><img src="FE5Portraits/Halvan_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Dagdar</p><img src="FE5Portraits/Dagda_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Tanya</p><img src="FE5Portraits/Tanya_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Marty</p><img src="FE5Portraits/Marty_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Ronan</p><img src="FE5Portraits/Ronan_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Safy</p><img src="FE5Portraits/Safy_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Lifis</p><img src="FE5Portraits/Lifis_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Machuya</p><img src="FE5Portraits/Machuya_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Brighton</p><img src="FE5Portraits/Brighton_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Lara</p><img src="FE5Portraits/Lara_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Fergus</p><img src="FE5Portraits/Fergus_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Karin</p><img src="FE5Portraits/Karin_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Dalsin</p><img src="FE5Portraits/Dalsin_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Asbel</p><img src="FE5Portraits/Asbel_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Nanna</p><img src="FE5Portraits/Nanna_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Hicks</p><img src="FE5Portraits/Hicks_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Shiva</p><img src="FE5Portraits/Shiva_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Carrion</p><img src="FE5Portraits/Carrion_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Selphina</p><img src="FE5Portraits/Selphina_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Cain</p><img src="FE5Portraits/Cain_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Alba</p><img src="FE5Portraits/Alba_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Robert</p><img src="FE5Portraits/Robert_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Fred</p><img src="FE5Portraits/Fred_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Olwen</p><img src="FE5Portraits/Olwen_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Mareeta</p><img src="FE5Portraits/Mareeta_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Salem</p><img src="FE5Portraits/Salem_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Pahn</p><img src="FE5Portraits/Pahn_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Troude</p><img src="FE5Portraits/Troude_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Tina</p><img src="FE5Portraits/Tina_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Glade</p><img src="FE5Portraits/Glade_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Dean</p><img src="FE5Portraits/Dean_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Eda</p><img src="FE5Portraits/Eda_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Homer</p><img src="FE5Portraits/Homer_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Linoan</p><img src="FE5Portraits/Linoan_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Ralf</p><img src="FE5Portraits/Ralf_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Ilios</p><img src="FE5Portraits/Ilios_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Sleuf</p><img src="FE5Portraits/Sleuf_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Misha</p><img src="FE5Portraits/Misha_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Sara</p><img src="FE5Portraits/Sara_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Shannam</p><img src="FE5Portraits/Shannam_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Miranda</p><img src="FE5Portraits/Miranda_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Xavier</p><img src="FE5Portraits/Xavier_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Amalda</p><img src="FE5Portraits/Amalda_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Conomor</p><img src="FE5Portraits/Conomor_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Delmund</p><img src="FE5Portraits/Delmud_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Saias</p><img src="FE5Portraits/Saias_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Ced</p><img src="FE5Portraits/Ced_Portrait.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Galzus</p><img src="FE5Portraits/Galzus_Portrait.webp" class="Portrait"></div>
+                        </div>
+                    </details>
+                    <details>
+                        <summary id="Per_Não_Jogáveis" class="TableDetailsSummary">Não-Jogáveis/História</summary>
+                        <div class="CharacterContainer"><center>
+                            <div class="CharacterIcon"><p class="CharName">August</p><img src="FE5Portraits/August.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Yubel</p><img src="FE5Portraits/Yuvel-Civ.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Romeo</p><img src="FE5Portraits/Yuvel-Civ.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Coirpre</p><img src="FE5Portraits/Corple.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Lucia</p><img src="FE5Portraits/Lucia.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Ishtar</p><img src="FE5Portraits/Ishtar.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Julius</p><img src="FE5Portraits/Julius.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Manfroy</p><img src="FE5Portraits/Manfloy.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Hannibal</p><img src="FE5Portraits/Hannival.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Doryas</p><img src="FE5Portraits/Dorias.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Arion</p><img src="FE5Portraits/Arion.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Trabant</p><img src="FE5Portraits/Trabant.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Lewyn</p><img src="FE5Portraits/Levin.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Seliph</p><img src="FE5Portraits/Seliph.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Julia</p><img src="FE5Portraits/Julia.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Blume</p><img src="FE5Portraits/Blume.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Altenna</p><img src="FE5Portraits/Altenna.webp" class="Portrait"></div>
+                        </center></div>
+                    </details>
+                    
+                    <h1 id="Antagonistas" class="title">Antagonistas</h1>
+                    <details>
+                        <summary class="TableDetailsSummary">Primários</summary>
+                            <div class="CharacterContainer"><center>
+                            <div class="CharacterIcon"><p class="CharName">Leidrick</p><img src="FE5Portraits/Leidrick.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Veld</p><img src="FE5Portraits/Veld.webp" class="Portrait"></div>
+                        </center></div>
+                    </details>
+                    <details>
+                        <summary id="Antag_Secundário" class="TableDetailsSummary"">Secundários</summary>
+                        <div class="CharacterContainer"><center>
+                            <div class="CharacterIcon"><p class="CharName">Galzus</p><img src="FE5Portraits/Galzus.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Kempf</p><img src="FE5Portraits/Kempf.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Reinhard</p><img src="FE5Portraits/Reinhard.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Saias</p><img src="FE5Portraits/Saias_Portrait.webp" class="Portrait"></div><br>
+                            <div class="CharacterIcon"><p class="CharName">Bovis</p><img src="FE5Portraits/Bovis.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Canis</p><img src="FE5Portraits/Canis.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Draco</p><img src="FE5Portraits/Draco.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Mus</p><img src="FE5Portraits/Mus.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Drei</p><img src="FE5Portraits/Drei.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Porcus</p><img src="FE5Portraits/Porcus.webp" class="Portrait"></div>
+                        </center></div>
+                    </details>
+                    <details>
+                        <summary id="Antag_Terciário" class="TableDetailsSummary">Terciários</summary>
+                        <div class="CharacterContainer"><center>
+                            <div class="CharacterIcon"><p class="CharName">Weissman</p><img src="FE5Portraits/Weissman.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Bucks</p><img src="FE5Portraits/Bucks.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Lobos</p><img src="FE5Portraits/Lobos.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Bandol</p><img src="FE5Portraits/Weissman.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Truman</p><img src="FE5Portraits/Largo.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Aizenal</p><img src="FE5Portraits/Aizenau.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Rumei</p><img src="FE5Portraits/Rumei.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Gomes</p><img src="FE5Portraits/Gomes.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Merlock</p><img src="FE5Portraits/Merlock.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Dobalzark</p><img src="FE5Portraits/Dobalzark.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Largo</p><img src="FE5Portraits/Largo.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Oltof</p><img src="FE5Portraits/Oltof.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Cullough</p><img src="FE5Portraits/Colho.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Rist</p><img src="FE5Portraits/Rist.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Baldack</p><img src="FE5Portraits/Baldack.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Paulus</p><img src="FE5Portraits/Paulus.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Makroy</p><img src="FE5Portraits/Makroy.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Codha</p><img src="FE5Portraits/Codda.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Aihiman</p><img src="FE5Portraits/Aihiman.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Zile</p><img src="FE5Portraits/Zale.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Mua</p><img src="FE5Portraits/Mua.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Mueller</p><img src="FE5Portraits/Mueller.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Nicolov</p><img src="FE5Portraits/Largo.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Rinecok</p><img src="FE5Portraits/Rinecock.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Gustav</p><img src="FE5Portraits/Gustav.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Wolff</p><img src="FE5Portraits/Wolf.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Brook</p><img src="FE5Portraits/Brook.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Palman</p><img src="FE5Portraits/Palman.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Barath</p><img src="FE5Portraits/Barat.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Seimetol</p><img src="FE5Portraits/Seimetol.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Fraus</p><img src="FE5Portraits/Fraus.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Zaom</p><img src="FE5Portraits/Zaom.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Cowen</p><img src="FE5Portraits/Gunna.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Alfan</p><img src="FE5Portraits/Alfan.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Farden</p><img src="FE5Portraits/Farden.webp" class="Portrait"></div>
+                            <div class="CharacterIcon"><p class="CharName">Coruta</p><img src="FE5Portraits/Coruta.webp" class="Portrait"></div>
+                        </center></div>
+                    </details>
+    
+                    <h1 id="Itens" class="title">Itens</h1>
+    
+                    <details>
+                        <summary id="Espadas" class="TableDetailsSummary">Espadas</summary>
+                        <div class="TablesInGeneral">
+                        <table class="text" style="text-align: center;">
+                            <tr>
+                                <th><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></th>
+                                <th>Nome</th>
+                                <th>Ranque</th>
+                                <th>Alcance</th>
+                                <th>Usos</th>
+                                <th>Peso</th>
+                                <th>Força</th>
+                                <th>Acerto</th>
+                                <th>Critico</th>
+                                <th>Preço</th>
+                                <th>Efeitos</th>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Shortsword.webp" class="SpriteIcon"></td>
+                                <td>Espada Curta de Ferro</td>
+                                <td>E</td>
+                                <td>1</td>
+                                <td>40</td>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>75%</td>
+                                <td>0%</td>
+                                <td>1000</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Ironsword.webp" class="SpriteIcon"></td>
+                                <td>Espada de Ferro</td>
+                                <td>E</td>
+                                <td>1</td>
+                                <td>40</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>70%</td>
+                                <td>0%</td>
+                                <td>2200</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Poisonsword.webp" class="SpriteIcon"></td>
+                                <td>Espada de Veneno</td>
+                                <td>E</td>
+                                <td>1</td>
+                                <td>40</td>
+                                <td>6</td>
+                                <td>3</td>
+                                <td>60%</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td>Aplica veneno no alvo</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Slimsword.webp" class="SpriteIcon"></td>
+                                <td>Espada Fina</td>
+                                <td>E</td>
+                                <td>1</td>
+                                <td>30</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>100%</td>
+                                <td>5%</td>
+                                <td>2600</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Elitesword.webp" class="SpriteIcon"></td>
+                                <td>Espada Elite</td>
+                                <td>E</td>
+                                <td>1</td>
+                                <td>40</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>65%</td>
+                                <td>0%</td>
+                                <td>5800</td>
+                                <td>Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Paragon.webp" class="SpriteIcon"></a> quando equipado.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Longsword.webp" class="SpriteIcon"></td>
+                                <td>Espada Longa</td>
+                                <td>D</td>
+                                <td>1</td>
+                                <td>30</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>65%</td>
+                                <td>0%</td>
+                                <td>1400</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Steelsword.webp" class="SpriteIcon"></td>
+                                <td>Espada de Aço</td>
+                                <td>D</td>
+                                <td>1</td>
+                                <td>30</td>
+                                <td>11</td>
+                                <td>9</td>
+                                <td>65%</td>
+                                <td>0%</td>
+                                <td>2900</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Ironblade.webp" class="SpriteIcon"></td>
+                                <td>Lâmina de Ferro</td>
+                                <td>C</td>
+                                <td>1</td>
+                                <td>30</td>
+                                <td>15</td>
+                                <td>12</td>
+                                <td>55%</td>
+                                <td>5%</td>
+                                <td>2000</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Rapier.webp" class="SpriteIcon"></td>
+                                <td>Rapieira</td>
+                                <td>C</td>
+                                <td>1</td>
+                                <td>20</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>90%</td>
+                                <td>10%</td>
+                                <td>1000</td>
+                                <td>Efetiva contra armadura e cavalaria.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Killingedge.webp" class="SpriteIcon"></td>
+                                <td>Lâmina Mortal</td>
+                                <td>C</td>
+                                <td>1</td>
+                                <td>30</td>
+                                <td>7</td>
+                                <td>9</td>
+                                <td>80%</td>
+                                <td>30%</td>
+                                <td>3800</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Kingsword.webp" class="SpriteIcon"></td>
+                                <td>Espada do Rei</td>
+                                <td>C</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>10</td>
+                                <td>13</td>
+                                <td>70%</td>
+                                <td>20%</td>
+                                <td>-</td>
+                                <td>Permite o usuário atacar 2x em um ataque, além de conceder <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Charisma.webp" class="SpriteIcon"></a> quando equipado.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Greatsword.webp" class="SpriteIcon"></td>
+                                <td>Espada Grande</td>
+                                <td>B</td>
+                                <td>1</td>
+                                <td>20</td>
+                                <td>16</td>
+                                <td>15</td>
+                                <td>55%</td>
+                                <td>0%</td>
+                                <td>2000</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Silversword.webp" class="SpriteIcon"></td>
+                                <td>Espada de Prata</td>
+                                <td>B</td>
+                                <td>1</td>
+                                <td>20</td>
+                                <td>8</td>
+                                <td>14</td>
+                                <td>75%</td>
+                                <td>0%</td>
+                                <td>8200</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Armorslayer.webp" class="SpriteIcon"></td>
+                                <td>Matador de Armadura</td>
+                                <td>B</td>
+                                <td>1</td>
+                                <td>30</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>60%</td>
+                                <td>0%</td>
+                                <td>4400</td>
+                                <td>Efetivo contra armadura.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Herosword.webp" class="SpriteIcon"></td>
+                                <td>Espada do Corajoso</td>
+                                <td>B</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>75%</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td>Permite o usuário atacar 2x.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Firesword.webp" class="SpriteIcon"></td>
+                                <td>Espada de Fogo</td>
+                                <td>B</td>
+                                <td>1~2</td>
+                                <td>40</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>70%</td>
+                                <td>0%</td>
+                                <td>8200</td>
+                                <td>Concede +5 Magic.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Thundersword.webp" class="SpriteIcon"></td>
+                                <td>Espada do Trovão</td>
+                                <td>B</td>
+                                <td>1~2</td>
+                                <td>40</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>70%</td>
+                                <td>0%</td>
+                                <td>8200</td>
+                                <td>Concede +5 Skill.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Windsword.webp" class="SpriteIcon"></td>
+                                <td>Espada de Vento</td>
+                                <td>B</td>
+                                <td>1~2</td>
+                                <td>40</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>70%</td>
+                                <td>0%</td>
+                                <td>8200</td>
+                                <td>Concede +5 Speed.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Mastersword.webp" class="SpriteIcon"></td>
+                                <td>Espada Mestra</td>
+                                <td>A</td>
+                                <td>1</td>
+                                <td>20</td>
+                                <td>15</td>
+                                <td>14</td>
+                                <td>60%</td>
+                                <td>10%</td>
+                                <td>4200</td>
+                                <td>Permite o usuário atacar 2x.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Sleepsword.webp" class="SpriteIcon"></td>
+                                <td>Espada do Sono</td>
+                                <td>A</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td>8</td>
+                                <td>55%</td>
+                                <td>0%</td>
+                                <td>2000</td>
+                                <td>Aplica dormir no alvo.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Berserksword.webp" class="SpriteIcon"></td>
+                                <td>Espada Berserker</td>
+                                <td>A</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td>8</td>
+                                <td>55%</td>
+                                <td>0%</td>
+                                <td>3000</td>
+                                <td>Aplica berserker no alvo.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Lightsword.webp" class="SpriteIcon"></td>
+                                <td>Lâmina de Luz</td>
+                                <td>*</td>
+                                <td>1~2</td>
+                                <td>60</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>80%</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Leif. +10 Sorte. Pode ser usado para restaurar a vida do usuário.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Earthsword.webp" class="SpriteIcon"></td>
+                                <td>Espada da Terra</td>
+                                <td>*</td>
+                                <td>1~2</td>
+                                <td>60</td>
+                                <td>9</td>
+                                <td>12</td>
+                                <td>80%</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Nanna. Quando atacando, restaura a vida baseado no dano causado.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Darknesssword.webp" class="SpriteIcon"></td>
+                                <td>Espada das Sombras</td>
+                                <td>*</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>6</td>
+                                <td>11</td>
+                                <td>70%</td>
+                                <td>20%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Mareeta. Permite atacar 2x. Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Awareness.webp" class="SpriteIcon"></a>.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Mareetassword.webp" class="SpriteIcon"></td>
+                                <td>Espada de Mareeta</td>
+                                <td>*</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>6</td>
+                                <td>11</td>
+                                <td>70%</td>
+                                <td>20%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Mareeta. Permite atacar 2x. Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Awareness.webp" class="SpriteIcon"></a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Beosword.webp" class="SpriteIcon"></td>
+                                <td>Beos</td>
+                                <td>*</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>13</td>
+                                <td>16</td>
+                                <td>70%</td>
+                                <td>30%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Delmud e Fergus. Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Vantage.webp" class="SpriteIcon"></a> e <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Wrath.webp" class="SpriteIcon"></a> quando equipado.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Holysword.webp" class="SpriteIcon"></td>
+                                <td>Espada Sagrada</td>
+                                <td>*</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>11</td>
+                                <td>17</td>
+                                <td>65%</td>
+                                <td>20%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Olwen. Permite atacar 2x. Efetivo contra cavalaria. +10 Magic. Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Miracle.webp" class="SpriteIcon"></a>Milagre quando equipado.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Blagisword.webp" class="SpriteIcon"></td>
+                                <td>Bragi</td>
+                                <td>*</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>12</td>
+                                <td>15</td>
+                                <td>70%</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Descendentes dos 12 Cruzados (Leif/Nanna/Delmud/Fergus). Efetivo contra armadura. Nega o efeito da Lâmina de Lopto. Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Miracle.webp" class="SpriteIcon"></a> quando equipado.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Loptoussword.webp" class="SpriteIcon"></td>
+                                <td>Lâmina de Lopto</td>
+                                <td>*</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td>20</td>
+                                <td>15</td>
+                                <td>70%</td>
+                                <td>0%</td>
+                                <td>-</td>
+                                <td>Exclusivo de Reidrick. +20 Magic. Reduz o Dano do oponente pela metade.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="FE5Items/Brokensword.webp" class="SpriteIcon"></td>
+                                <td>Espada Quebrada</td>
+                                <td>E</td>
+                                <td>1</td>
+                                <td>-</td>
+                                <td>20</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0%</td>
+                                <td>200</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    </details>
+
+                    <details>
+                        <summary id="Lanças" class="TableDetailsSummary">Lanças</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Ironlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança de Ferro</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>40</th>
+                                    <th>9</th>
+                                    <th>7</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Slimlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Fina</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>6</th>
+                                    <th>4</th>
+                                    <th>100%</th>
+                                    <th>5%</th>
+                                    <th>2000</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Ironlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Envenenada</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>25</th>
+                                    <th>9</th>
+                                    <th>4</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Aplica veneno. Se torna uma lança de ferro quando roubada.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Shortlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Curta</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>8</th>
+                                    <th>5</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>800</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Darknesslance.webp." class="SpriteIcon"></th>
+                                    <th>Lança Negra</th>
+                                    <th>E</th>
+                                    <th>1~2</th>
+                                    <th>60</th>
+                                    <th>20</th>
+                                    <th>20</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>200</th>
+                                    <th>Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Awareness.webp" class="SpriteIcon"></a> quando equipado.<br>Não utilizado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Steellance.webp" class="SpriteIcon"></th>
+                                    <th>Lança de Aço</th>
+                                    <th>D</th>
+                                    <th>1</th>
+                                    <th>60</th>
+                                    <th>20</th>
+                                    <th>20</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Longlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Longa</th>
+                                    <th>D</th>
+                                    <th>1</th>
+                                    <th>30</th>
+                                    <th>15</th>
+                                    <th>10</th>
+                                    <th>65%</th>
+                                    <th>0%</th>
+                                    <th>1400</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Javelin.webp" class="SpriteIcon"></th>
+                                    <th>Lança de Dardo</th>
+                                    <th>D</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>12</th>
+                                    <th>6</th>
+                                    <th>50%</th>
+                                    <th>0%</th>
+                                    <th>1200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Great_Lance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Grande</th>
+                                    <th>C</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>18</th>
+                                    <th>18</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Silverlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança de Prata</th>
+                                    <th>B</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>10</th>
+                                    <th>15</th>
+                                    <th>75%</th>
+                                    <th>0%</th>
+                                    <th>4000</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Knightkiller.webp" class="SpriteIcon"></th>
+                                    <th>Assassino de Cavaleiro</th>
+                                    <th>B</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>13</th>
+                                    <th>14</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>3000</th>
+                                    <th>Efetiva contra cavalaria.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Killerlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Assassina</th>
+                                    <th>B</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>10</th>
+                                    <th>12</th>
+                                    <th>80%</th>
+                                    <th>30%</th>
+                                    <th>3000</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Gaebolg.webp" class="SpriteIcon"></th>
+                                    <th>Gae Bolg</th>
+                                    <th>B</th>
+                                    <th>1~2</th>
+                                    <th>90</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>100%</th>
+                                    <th>50%</th>
+                                    <th>200</th>
+                                    <th>+10 STR. Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Charisma.webp" class="SpriteIcon"></a><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Vantage.webp" class="SpriteIcon"></a><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Awareness.webp" class="SpriteIcon"></a><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Wrath.webp" class="SpriteIcon"></a>quando equipado.<br>Não utilizado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Gungnir.webp" class="SpriteIcon"></th>
+                                    <th>Gugnir</th>
+                                    <th>B</th>
+                                    <th>1</th>
+                                    <th>90</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>100%</th>
+                                    <th>70%</th>
+                                    <th>200</th>
+                                    <th>+10 DEF. Concede <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Vantage.webp" class="SpriteIcon"></a><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Awareness.webp" class="SpriteIcon"></a><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Wrath.webp" class="SpriteIcon"></a><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Paragon.webp" class="SpriteIcon"></a>quando equipado.<br>Não utilizado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Masterlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Mestra</th>
+                                    <th>A</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>16</th>
+                                    <th>14</th>
+                                    <th>55%</th>
+                                    <th>0%</th>
+                                    <th>3400</th>
+                                    <th>Permite o usuário atacar 2x quando equipado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Dragonlance.webp" class="SpriteIcon"></th>
+                                    <th>Pique Dragão</th>
+                                    <th>*</th>
+                                    <th>1</th>
+                                    <th>60</th>
+                                    <th>12</th>
+                                    <th>16</th>
+                                    <th>65%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Dean. Permite o usuário atacar 2x, além de conceder <a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Vantage.webp" class="SpriteIcon"></a> quando equipado</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Bravelance.webp" class="SpriteIcon"></th>
+                                    <th>Lança do Corajoso</th>
+                                    <th>*</th>
+                                    <th>1</th>
+                                    <th>60</th>
+                                    <th>9</th>
+                                    <th>13</th>
+                                    <th>70%</th>
+                                    <th>10%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Fin. Permite o usuário atacar 2x, além de conceder +10 Luck.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Brokenlance.webp" class="SpriteIcon"></th>
+                                    <th>Lança Quebrada</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>-</th>
+                                    <th>15</th>
+                                    <th>0</th>
+                                    <th>0%</th>
+                                    <th>0%</th>
+                                    <th>200</th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Machados" class="TableDetailsSummary">Machados</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Ironaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado de Ferro</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>30</th>
+                                    <th>10</th>
+                                    <th>9</th>
+                                    <th>65%</th>
+                                    <th>0%</th>
+                                    <th>1100</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Poisonaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado Envenenado</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>30</th>
+                                    <th>10</th>
+                                    <th>6</th>
+                                    <th>65%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Envenena o alvo. Se torna um machado de ferro quando roubado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Devilaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado Demoníaco</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>20</th>
+                                    <th>20</th>
+                                    <th>50%</th>
+                                    <th>0%</th>
+                                    <th>1200</th>
+                                    <th>Quando atacando, pode infligir dano no próprio usuário ao invés do oponente.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Steelaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado de Aço</th>
+                                    <th>D</th>
+                                    <th>1</th>
+                                    <th>25</th>
+                                    <th>15</th>
+                                    <th>13</th>
+                                    <th>55%</th>
+                                    <th>0%</th>
+                                    <th>1700</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Handaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado de Mão</th>
+                                    <th>D</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>12</th>
+                                    <th>6</th>
+                                    <th>45%</th>
+                                    <th>0%</th>
+                                    <th>1000</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Braveaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado do Corajoso</th>
+                                    <th>D</th>
+                                    <th>1</th>
+                                    <th>60</th>
+                                    <th>12</th>
+                                    <th>14</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Permite o usuário atacar 2x.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Hammer.webp" class="SpriteIcon"></th>
+                                    <th>Martelo</th>
+                                    <th>C</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>18</th>
+                                    <th>12</th>
+                                    <th>50%</th>
+                                    <th>0%</th>
+                                    <th>1200</th>
+                                    <th>Efetivo contra armaduras.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Killeraxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado Assassino</th>
+                                    <th>C</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>10</th>
+                                    <th>12</th>
+                                    <th>75%</th>
+                                    <th>30%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Poleaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado de Polo</th>
+                                    <th>C</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>17</th>
+                                    <th>15</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th>Efetivo contra cavalaria.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Silveraxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado de Prata</th>
+                                    <th>B</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>12</th>
+                                    <th>18</th>
+                                    <th>65%</th>
+                                    <th>0%</th>
+                                    <th>4200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Battleaxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado de Batalha</th>
+                                    <th>B</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>14</th>
+                                    <th>13</th>
+                                    <th>60%</th>
+                                    <th>10%</th>
+                                    <th>1000</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Masteraxe.webp" class="SpriteIcon"></th>
+                                    <th>Machado Mestre</th>
+                                    <th>B</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>16</th>
+                                    <th>15</th>
+                                    <th>55%</th>
+                                    <th>0%</th>
+                                    <th>3200</th>
+                                    <th>Permite o usuário atacar 2x.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Vouge.webp" class="SpriteIcon"></th>
+                                    <th>Vouge</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>60</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>80%</th>
+                                    <th>30%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Othin.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Machado Quebrado</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>0</th>
+                                    <th>20</th>
+                                    <th>0</th>
+                                    <th>0%</th>
+                                    <th>0%</th>
+                                    <th>200</th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Arcos" class="TableDetailsSummary">Arcos</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Ironbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco de Ferro</th>
+                                    <th>E</th>
+                                    <th>2</th>
+                                    <th>40</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>65%</th>
+                                    <th>0</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Ironbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco Envenenado</th>
+                                    <th>E</th>
+                                    <th>2</th>
+                                    <th>40</th>
+                                    <th>6</th>
+                                    <th>4</th>
+                                    <th>55%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Inflige veneno. Se torna um arco de ferro quando roubado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Shortbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco Curto</th>
+                                    <th>E</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>6</th>
+                                    <th>5</th>
+                                    <th>75%</th>
+                                    <th>0%</th>
+                                    <th>800</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Steelbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco de Aço</th>
+                                    <th>D</th>
+                                    <th>2</th>
+                                    <th>30</th>
+                                    <th>12</th>
+                                    <th>10</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>3200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Longbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco Longo</th>
+                                    <th>D</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>11</th>
+                                    <th>10</th>
+                                    <th>65%</th>
+                                    <th>0%</th>
+                                    <th>1400</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Great_Bow.webp" class="SpriteIcon"></th>
+                                    <th>Arco Grande</th>
+                                    <th>C</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>16</th>
+                                    <th>18</th>
+                                    <th>55%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Silverbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco de Prata</th>
+                                    <th>B</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>9</th>
+                                    <th>15</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>4000</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Killerbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco Assassino</th>
+                                    <th>B</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>9</th>
+                                    <th>11</th>
+                                    <th>70%</th>
+                                    <th>30%</th>
+                                    <th>3200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Bravebow.webp" class="SpriteIcon"></th>
+                                    <th>Arco do Corajoso</th>
+                                    <th>B</th>
+                                    <th>2</th>
+                                    <th>60</th>
+                                    <th>10</th>
+                                    <th>14</th>
+                                    <th>95%</th>
+                                    <th>20%</th>
+                                    <th>-</th>
+                                    <th>Permite o usuário atacar 2x.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Masterbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco Mestre</th>
+                                    <th>A</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>14</th>
+                                    <th>13</th>
+                                    <th>65%</th>
+                                    <th>0%</th>
+                                    <th>3000</th>
+                                    <th>Permite o usuário atacar 2x.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Longarch.webp" class="SpriteIcon"></th>
+                                    <th>Besta Longa</th>
+                                    <th>*</th>
+                                    <th>3~10</th>
+                                    <th>10</th>
+                                    <th>20</th>
+                                    <th>15</th>
+                                    <th>75%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th>Exclusivo da classe Besta Longa.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Ironarch.webp" class="SpriteIcon"></th>
+                                    <th>Besta de Ferro</th>
+                                    <th>*</th>
+                                    <th>3~15</th>
+                                    <th>10</th>
+                                    <th>20</th>
+                                    <th>20</th>
+                                    <th>75%</th>
+                                    <th>0%</th>
+                                    <th>4200</th>
+                                    <th>Exclusivo da classe Besta de Ferro.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Poisonarch.webp" class="SpriteIcon"></th>
+                                    <th>Besta de Veneno</th>
+                                    <th>*</th>
+                                    <th>3~15</th>
+                                    <th>10</th>
+                                    <th>20</th>
+                                    <th>10</th>
+                                    <th>50%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo da classe Besta de Veneno. Aplica veneno no acerto. Se tornar uma besta de ferro quando roubado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Brokenbow.webp" class="SpriteIcon"></th>
+                                    <th>Arco Quebrado</th>
+                                    <th>E</th>
+                                    <th>2</th>
+                                    <th>20</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0%</th>
+                                    <th>0%</th>
+                                    <th>200</th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Cajados" class="TableDetailsSummary">Cajados</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>EXP</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Heal.webp" class="SpriteIcon"></th>
+                                    <th>Curar</th>
+                                    <th>E</th>
+                                    <th>1</th>
+                                    <th>20</th>
+                                    <th>4</th>
+                                    <th>15</th>
+                                    <th>2200</th>
+                                    <th>Restaura uma pequena quantidade de vida de uma unidade adjacente.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Mend.webp" class="SpriteIcon"></th>
+                                    <th>Consertar</th>
+                                    <th>D</th>
+                                    <th>1</th>
+                                    <th>15</th>
+                                    <th>6</th>
+                                    <th>17</th>
+                                    <th>2300</th>
+                                    <th>Restaura uma quantidade moderada de vida de uma unidade adjacente.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Torch.webp" class="SpriteIcon"></th>
+                                    <th>Tocha</th>
+                                    <th>D</th>
+                                    <th>-</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>30</th>
+                                    <th>2200</th>
+                                    <th>Aumenta o campo de visão da unidade, da névoa de guerra, em 10 quadrados. Diminui 1 quadrado por turno.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Recover.webp" class="SpriteIcon"></th>
+                                    <th>Recuperar</th>
+                                    <th>C</th>
+                                    <th>1</th>
+                                    <th>10</th>
+                                    <th>8</th>
+                                    <th>20</th>
+                                    <th>2200</th>
+                                    <th>Restaura toda a vida de uma unidade adjacente.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Physic.webp" class="SpriteIcon"></th>
+                                    <th>Física</th>
+                                    <th>C</th>
+                                    <th>∞</th>
+                                    <th>5</th>
+                                    <th>8</th>
+                                    <th>40</th>
+                                    <th>1700</th>
+                                    <th>Restaura uma pequena quantidade de vida de um aliado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Restore.webp" class="SpriteIcon"></th>
+                                    <th>Restaurar</th>
+                                    <th>C</th>
+                                    <th>1</th>
+                                    <th>5</th>
+                                    <th>8</th>
+                                    <th>40</th>
+                                    <th>3200</th>
+                                    <th>Restaura todos os efeitos de status de uma unidade adjacente, com exceção do efeito Petrificado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Magicup.webp" class="SpriteIcon"></th>
+                                    <th>Melhorar Magia</th>
+                                    <th>C</th>
+                                    <th>1</th>
+                                    <th>5</th>
+                                    <th>8</th>
+                                    <th>30</th>
+                                    <th>2200</th>
+                                    <th>Aumenta o MGC de uma unidade adjacente em 7, diminui 1 por turno.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Sleep.webp" class="SpriteIcon"></th>
+                                    <th>Dormir</th>
+                                    <th>C</th>
+                                    <th>∞</th>
+                                    <th>3</th>
+                                    <th>8</th>
+                                    <th>25</th>
+                                    <th>1700</th>
+                                    <th>Aplica o efeito de Dormir um inimigo. Não afeta unidades que estão em trono ou portão.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Watch.webp" class="SpriteIcon"></th>
+                                    <th>Assistir</th>
+                                    <th>C</th>
+                                    <th>∞</th>
+                                    <th>4</th>
+                                    <th>7</th>
+                                    <th>30</th>
+                                    <th>1800</th>
+                                    <th>Seu efeito provavelmente revelaria áreas escondidas. Sua animação de mapa é a mesma que a utilizada ao concluir o último capítulo do jogo. Não utilizado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Fortify.webp" class="SpriteIcon"></th>
+                                    <th>Fortificar</th>
+                                    <th>B</th>
+                                    <th>∞</th>
+                                    <th>3</th>
+                                    <th>9</th>
+                                    <th>35</th>
+                                    <th>1700</th>
+                                    <th>Restaura uma pequena quantidade de vida de todos os aliados.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Rescue.webp" class="SpriteIcon"></th>
+                                    <th>Resgate</th>
+                                    <th>B</th>
+                                    <th>∞</th>
+                                    <th>3</th>
+                                    <th>7</th>
+                                    <th>40</th>
+                                    <th>2000</th>
+                                    <th>Teleporta um aliado para o terreno adjacente a este usuário</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Silencestaff.webp" class="SpriteIcon"></th>
+                                    <th>Silenciar</th>
+                                    <th>B</th>
+                                    <th>∞</th>
+                                    <th>3</th>
+                                    <th>9</th>
+                                    <th>30</th>
+                                    <th>1400</th>
+                                    <th>Aplica silêncio em uma unidade inimiga. Não funciona em unidades que estão em tronos e portões.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Warp.webp" class="SpriteIcon"></th>
+                                    <th>Cajado de Teleporte</th>
+                                    <th>A</th>
+                                    <th>1</th>
+                                    <th>3</th>
+                                    <th>8</th>
+                                    <th>40</th>
+                                    <th>2000</th>
+                                    <th>Teleporta uma unidade adjacente para qualquer terreno atravesável.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Berserk.webp" class="SpriteIcon"></th>
+                                    <th>Cajado Berserker</th>
+                                    <th>A</th>
+                                    <th>∞</th>
+                                    <th>3</th>
+                                    <th>10</th>
+                                    <th>40</th>
+                                    <th>2000</th>
+                                    <th>Aplica o efeito berserker em um inimigo. Não funciona em unidades que estão em tronos e portões.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Return.webp" class="SpriteIcon"></th>
+                                    <th>Retorno</th>
+                                    <th>A</th>
+                                    <th>1</th>
+                                    <th>3</th>
+                                    <th>7</th>
+                                    <th>40</th>
+                                    <th>1810</th>
+                                    <th>Permite a unidade adjacente escapar do mapa. Não utilizado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Rewarp.webp" class="SpriteIcon"></th>
+                                    <th>Cajado da Redobra</th>
+                                    <th>A</th>
+                                    <th>∞</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>20</th>
+                                    <th>1200</th>
+                                    <th>Teleporta o usuário para qualquer terreno atravesável.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Repair.webp" class="SpriteIcon"></th>
+                                    <th>Cajado Reparável</th>
+                                    <th>*</th>
+                                    <th>1</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>30</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Safy. Repara o item de uma unidade adjacente.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Thiefstaff.webp" class="SpriteIcon"></th>
+                                    <th>Cajado do Ladrão</th>
+                                    <th>*</th>
+                                    <th>∞</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>30</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Tina. Rouba o item do inimigo.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Unlockstaff.webp" class="SpriteIcon"></th>
+                                    <th>Cajado do Desbloqueio</th>
+                                    <th>*</th>
+                                    <th>∞</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>30</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Tina. Abre portas e baús.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Kia.webp" class="SpriteIcon"></th>
+                                    <th>Kia</th>
+                                    <th>*</th>
+                                    <th>1</th>
+                                    <th>5</th>
+                                    <th>7</th>
+                                    <th>30</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Sara. Cure aliados sob o efeito Petrificado.</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Fogo" class="TableDetailsSummary">Magia de Fogo</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Fireball.webp" class="SpriteIcon"></th>
+                                    <th>Bola de Fogo</th>
+                                    <th>E</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Elfire.webp" class="SpriteIcon"></th>
+                                    <th>El Fuego</th>
+                                    <th>C</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>7</th>
+                                    <th>11</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>3200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Bolganone.webp" class="SpriteIcon"></th>
+                                    <th>Vulcão</th>
+                                    <th>A</th>
+                                    <th>1~2</th>
+                                    <th>10</th>
+                                    <th>18</th>
+                                    <th>20</th>
+                                    <th>90%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th>Não utilizado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Meteor.webp" class="SpriteIcon"></th>
+                                    <th>Meteoro</th>
+                                    <th>A</th>
+                                    <th>3~10</th>
+                                    <th>5</th>
+                                    <th>20</th>
+                                    <th>9</th>
+                                    <th>75%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Valflame.webp" class="SpriteIcon"></th>
+                                    <th>Chama de Valhalla</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>50</th>
+                                    <th>15</th>
+                                    <th>20</th>
+                                    <th>90%</th>
+                                    <th>20%</th>
+                                    <th>-</th>
+                                    <th>Não utilizado.</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Trovão" class="TableDetailsSummary">Magia de Trovão</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Thunder.webp" class="SpriteIcon"></th>
+                                    <th>Trovão</th>
+                                    <th>E</th>
+                                    <th>1~2</th>
+                                    <th>30</th>
+                                    <th>5</th>
+                                    <th>7</th>
+                                    <th>60%</th>
+                                    <th>5%</th>
+                                    <th>3200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Thoron.webp" class="SpriteIcon"></th>
+                                    <th>Thoron</th>
+                                    <th>A</th>
+                                    <th>1~2</th>
+                                    <th>10</th>
+                                    <th>9</th>
+                                    <th>18</th>
+                                    <th>70%</th>
+                                    <th>20%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Bolting.webp" class="SpriteIcon"></th>
+                                    <th>Relâmpago Parafuso</th>
+                                    <th>A</th>
+                                    <th>3~10</th>
+                                    <th>5</th>
+                                    <th>20</th>
+                                    <th>10</th>
+                                    <th>70%</th>
+                                    <th>20%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Dimethunder.webp" class="SpriteIcon"></th>
+                                    <th>Trovão Terrível</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>60</th>
+                                    <th>12</th>
+                                    <th>15</th>
+                                    <th>70%</th>
+                                    <th>10%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Olwen e Reinhard. Permite o usuário atacar 2x.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Mjolnir.webp" class="SpriteIcon"></th>
+                                    <th>Mjölnir</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>50</th>
+                                    <th>15</th>
+                                    <th>20</th>
+                                    <th>90%</th>
+                                    <th>30%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Ishtar. Não utilizado.</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Vento" class="TableDetailsSummary">Magia de Vento</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Wind.webp" class="SpriteIcon"></th>
+                                    <th>Vento</th>
+                                    <th>D</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>1</th>
+                                    <th>6</th>
+                                    <th>90%</th>
+                                    <th>10%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Tornado.webp" class="SpriteIcon"></th>
+                                    <th>Tornado</th>
+                                    <th>A</th>
+                                    <th>1~2</th>
+                                    <th>10</th>
+                                    <th>10</th>
+                                    <th>18</th>
+                                    <th>80%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Blizzard.webp" class="SpriteIcon"></th>
+                                    <th>Nevasca</th>
+                                    <th>A</th>
+                                    <th>3~10</th>
+                                    <th>5</th>
+                                    <th>20</th>
+                                    <th>9</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>2200</th>
+                                    <th>Aplica Dormir ao acertar o alvo.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Grafcalibur.webp" class="SpriteIcon"></th>
+                                    <th>Grafcalibur</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>40</th>
+                                    <th>3</th>
+                                    <th>13</th>
+                                    <th>100%</th>
+                                    <th>40%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Albel.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Holsety.webp" class="SpriteIcon"></th>
+                                    <th>Forsety</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>50</th>
+                                    <th>6</th>
+                                    <th>20</th>
+                                    <th>90%</th>
+                                    <th>20%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Ced. +20 SKL, +20 SPD.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Holsety.webp" class="SpriteIcon"></th>
+                                    <th>Forsety</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>- -</th>
+                                    <th>6</th>
+                                    <th>20</th>
+                                    <th>90%</th>
+                                    <th>20%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo de Ced. +20 SKL, +20 SPD. Versão infinita, aparece somente nos capítulos 4x e 7.</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Luz" class="TableDetailsSummary">Magia de Luz</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Light_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Lightning.webp" class="SpriteIcon"></th>
+                                    <th>Raio de Luz</th>
+                                    <th>E</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>6</th>
+                                    <th>9</th>
+                                    <th>75%</th>
+                                    <th>20%</th>
+                                    <th>3200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Resire.webp" class="SpriteIcon"></th>
+                                    <th>Resistir</th>
+                                    <th>B</th>
+                                    <th>1~2</th>
+                                    <th>60</th>
+                                    <th>12</th>
+                                    <th>12</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>5200</th>
+                                    <th>Restaura vida baseado no dano causado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Aura.webp" class="SpriteIcon"></th>
+                                    <th>Aura</th>
+                                    <th>A</th>
+                                    <th>1~2</th>
+                                    <th>80</th>
+                                    <th>12</th>
+                                    <th>20</th>
+                                    <th>100%</th>
+                                    <th>0%</th>
+                                    <th>200</th>
+                                    <th>Não utilizado.</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Escuridão" class="TableDetailsSummary">Magia Negra</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: center;">
+                                <tr>
+                                    <th><img src="FE5Items/Dark_Icon.webp" class="SpriteIcon"></th>
+                                    <th>Nome</th>
+                                    <th>Ranque</th>
+                                    <th>Alcance</th>
+                                    <th>Usos</th>
+                                    <th>Peso</th>
+                                    <th>Força</th>
+                                    <th>Acerto</th>
+                                    <th>Critico</th>
+                                    <th>Preço</th>
+                                    <th>Efeitos</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Yotsmungand.webp" class="SpriteIcon"></th>
+                                    <th>Jormungandr</th>
+                                    <th>C</th>
+                                    <th>1~2</th>
+                                    <th>20</th>
+                                    <th>12</th>
+                                    <th>14</th>
+                                    <th>70%</th>
+                                    <th>10%</th>
+                                    <th>2200</th>
+                                    <th>Aplica Veneno quando utilizado por inimigos.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Fenrir.webp" class="SpriteIcon"></th>
+                                    <th>Fenrir</th>
+                                    <th>A</th>
+                                    <th>3~10</th>
+                                    <th>5</th>
+                                    <th>20</th>
+                                    <th>18</th>
+                                    <th>80%</th>
+                                    <th>0%</th>
+                                    <th>3200</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Poison.webp" class="SpriteIcon"></th>
+                                    <th>Veneno</th>
+                                    <th>A</th>
+                                    <th>3~10</th>
+                                    <th>3</th>
+                                    <th>20</th>
+                                    <th>8</th>
+                                    <th>70%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Aplica veneno. Se tornar Fenrir quando roubado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Petrify.webp" class="SpriteIcon"></th>
+                                    <th>Petrificar</th>
+                                    <th>A</th>
+                                    <th>3~10</th>
+                                    <th>5</th>
+                                    <th>20</th>
+                                    <th>1</th>
+                                    <th>100%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Aplica Petrificado. Se torna Fenrir quando roubado.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Hel.webp" class="SpriteIcon"></th>
+                                    <th>Hel</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>3</th>
+                                    <th>20</th>
+                                    <th>-</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Exclusivo dos inimigos. Reduz a vida do alvo para 1.</th>
+                                </tr>
+                                <tr>
+                                    <th><img src="FE5Items/Loptyr.webp" class="SpriteIcon"></th>
+                                    <th>Loptyr</th>
+                                    <th>*</th>
+                                    <th>1~2</th>
+                                    <th>3</th>
+                                    <th>15</th>
+                                    <th>0</th>
+                                    <th>60%</th>
+                                    <th>0%</th>
+                                    <th>-</th>
+                                    <th>Não utilizado.</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+    
+                    <h1 id="Classes" class="title">Classes</h1>
+                    <details>
+                        <summary id="Classes_Jogáveis" class="TableDetailsSummary">Jogáveis</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text">
+                                <tr>
+                                    <th>Classe</th>
+                                    <th>Armas</th>
+                                    <th>Promoção</th>
+                                    <th>Habilidades</th>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Lord.webp" class="SpriteIcon">Lord</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Prince</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Lord.webp" class="SpriteIcon">Prince</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Swordfighter.webp" class="SpriteIcon">Myrmidon</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Swordmaster<br>Hero(Machuya)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Swordmaster.webp" class="SpriteIcon">Swordmaster</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Adept.webp" class="SpriteIcon"></a></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Thief.webp" class="SpriteIcon">Thief</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Thief Fighter<br>Dancer(Lara)</td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Steal.webp" class="SpriteIcon"></a></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Thief_fighter.webp" class="SpriteIcon">Thief Fighter</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Dancer(Lara)</td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Steal.webp" class="SpriteIcon"></a><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Vantage.webp" class="SpriteIcon"></a></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Dancer.webp" class="SpriteIcon">Dancer</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Thief Fighter</td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Dance.webp" class="SpriteIcon"></a></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Axe_fighter.webp" class="SpriteIcon">Axe Fighter</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Hero</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Hero.webp" class="SpriteIcon">Hero</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Brigand.webp" class="SpriteIcon">Brigand</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Warrior</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Warrior.webp" class="SpriteIcon">Warrior</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Bow_fighter.webp" class="SpriteIcon">Bow Fighter</td>
+                                    <td><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Sniper</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Sniper.webp" class="SpriteIcon">Sniper</td>
+                                    <td><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Arch_knight.webp" class="SpriteIcon">Arch Knight</td>
+                                    <td><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Bow Knight</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Bow_knight.webp" class="SpriteIcon">Bow Knight</td>
+                                    <td><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Cavalier.webp" class="SpriteIcon">Cavalier</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Paladin(M)</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Paladin(M).webp" class="SpriteIcon">Paladin(M)</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Troubadour.webp" class="SpriteIcon">Trobadour</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Paladin(F)</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Paladin(F).webp" class="SpriteIcon">Paladin(F)</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Free_knight.webp" class="SpriteIcon">Free Knight</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Ranger</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Forrest_knight.webp" class="SpriteIcon">Ranger</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Axe_knight.webp" class="SpriteIcon">Axe Knight</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Great Knight</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Great_knight.webp" class="SpriteIcon">Great Knight</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Lance_Knight.webp" class="SpriteIcon">Lance Knight</td>
+                                    <td><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Duke Knight</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Duke_Knight.webp" class="SpriteIcon">Duke Knight</td>
+                                    <td><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Peg_rider.webp" class="SpriteIcon">Pegasus Rider</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Pegasus Knight</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Peg_knight.webp" class="SpriteIcon">Pegasus Knight</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Wyvern_rider.webp" class="SpriteIcon">Wyvern Rider</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Wyvern Knight</td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Wyvern_knight.webp" class="SpriteIcon">Wyvern Knight</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Armored_Axe.webp" class="SpriteIcon">Axe Armor</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td>General</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/General.webp" class="SpriteIcon">General</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><a href="#Habilidades" title="Habilidades" class="Redirect"><center><img src="FE45Skills/Pavise.webp" class="SpriteIcon"></center></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Bard.webp" class="SpriteIcon">Bard</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Light_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Sage</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Cleric.webp" class="SpriteIcon">Sister</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Light_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Sage</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Sage.webp" class="SpriteIcon">Sage</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Light_Icon.webp" class="SpriteIcon"><br><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Adept.webp" class="SpriteIcon"></a></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Mage.webp" class="SpriteIcon">Mage</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Sage</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Mage_knight.webp" class="SpriteIcon">Mage Knight</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td><center>Mobilidade</center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Lopto_mage.webp" class="SpriteIcon">Loptyrian Mage</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Dark_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Dark Mage</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Dark_mage.webp" class="SpriteIcon">Dark Mage</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Dark_Icon.webp" class="SpriteIcon"><br><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Priest.webp" class="SpriteIcon">Priest</td>
+                                    <td><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td>High Priest</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/High_priest.webp" class="SpriteIcon">High Priest</td>
+                                    <td><img src="FE5Items/Light_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Classes_Não_Jogáveis" class="TableDetailsSummary">Não-jogáveis</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text Table3Columns">
+                                <tr>
+                                    <th>Classe</th>
+                                    <th>Armas</th>
+                                    <th>Notas</th>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Soldier.webp" class="SpriteIcon">Soldier</td>
+                                    <td><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Archer_enemy.webp" class="SpriteIcon">Archer</td>
+                                    <td><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/BrigandL.webp" class="SpriteIcon">Brigand</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Pirate.webp" class="SpriteIcon">Pirate</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Berserker.webp" class="SpriteIcon">Berserker</td>
+                                    <td><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"></td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Wrath.webp" class="SpriteIcon"></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Hunter.webp" class="SpriteIcon">Hunter</td>
+                                    <td><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Armored_Sword.webp" class="SpriteIcon">Sword Armor</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Armored_Lance.webp" class="SpriteIcon">Lance Armor</td>
+                                    <td><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Armored_Bow.webp" class="SpriteIcon">Bow Armor</td>
+                                    <td><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Baron.webp" class="SpriteIcon">Baron</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"><br><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td><a href="#Habilidades" title="Habilidades" class="Redirect"><center><img src="FE45Skills/Pavise.webp" class="SpriteIcon"></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Bishop.webp" class="SpriteIcon">Bishop</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Dark_Bishop.webp" class="SpriteIcon">Dark Bishop</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Dark_Icon.webp" class="SpriteIcon"><br><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Civilian.webp" class="SpriteIcon">Civilian</td>
+                                    <td></td>
+                                    <td>Nos capítulos 3, 4, 4x, 11x, 19, 23 e 24 possui uma habilidade escondida, chamada Não-Combatente, isso faz com que os inimigos nunca tentem matar a unidade, somente captura-la.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Long_Ballista.webp" class="SpriteIcon">Long Ballista</td>
+                                    <td></td>
+                                    <td>Consegue usar somente Besta Longa.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Iron_Ballista.webp" class="SpriteIcon">Iron Ballista</td>
+                                    <td></td>
+                                    <td>Consegue usar somente Besta de Ferro.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Poison_Ballista.webp" class="SpriteIcon">Poison Ballista</td>
+                                    <td></td>
+                                    <td>Consegue usar somente Besta Envenenada.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary id="Classes_Não_Utilizadas" class="TableDetailsSummary">Não utilizado</summary>
+                        <div class="TablesInGeneral">
+                            <table class="text">
+                                <tr>
+                                    <th>Classe</th>
+                                    <th>Armas</th>
+                                    <th>Notas</th>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Killer_Ballista.webp" class="SpriteIcon">Killer Ballista</td>
+                                    <td></td>
+                                    <td>Consegue usar somente Besta Assassina.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Junior_Lord.webp" class="SpriteIcon">Junior Lord</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Lord_Knight.webp" class="SpriteIcon">Lord Knight</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Master_Knight.webp" class="SpriteIcon">Master Knight</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"><br><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Charge.webp" class="SpriteIcon"></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Falcon_Knight.webp" class="SpriteIcon">Falcon Knight</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Miracle.webp" class="SpriteIcon"></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Wyvern_Master.webp" class="SpriteIcon">Wyvern Master</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Aparece nos capítulos 9 e 14, mas nunca é usado em combate.</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Emperor.webp" class="SpriteIcon">Emperor</td>
+                                    <td><img src="FE5Items/Sword_Icon.webp" class="SpriteIcon"><img src="FE5Items/Lance_Icon.webp" class="SpriteIcon"><img src="FE5Items/Axe_Icon.webp" class="SpriteIcon"><img src="FE5Items/Bow_Icon.webp" class="SpriteIcon"></td>
+                                    <td><center><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Pavise.webp" class="SpriteIcon"><a href="#Habilidades" title="Habilidades" class="Redirect"><img src="FE45Skills/Charisma.webp" class="SpriteIcon"></center></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="FE5ClassGifs/Dark_Prince.webp" class="SpriteIcon">Dark Prince</td>
+                                    <td><img src="FE5Items/Fire_Icon.webp" class="SpriteIcon"><img src="FE5Items/Thunder_Icon.webp" class="SpriteIcon"><img src="FE5Items/Wind_Icon.webp" class="SpriteIcon"><img src="FE5Items/Dark_Icon.webp" class="SpriteIcon"><br><img src="FE5Items/Staff_Icon.webp" class="SpriteIcon"></td>
+                                    <td>Aparece nos capítulos 4 e 21x, mas nunca é usado em combate.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+
+                    <h1 id="Habilidades" class="title">Habilidades</h1>
+                    <details>
+                        <summary class="TableDetailsSummary"></summary>
+                        <div class="TablesInGeneral">
+                            <table class="text" style="text-align: left;">
+                                <tr>
+                                    <td>Icone</td>
+                                    <td>Nome</td>
+                                    <td>Descrição</td>
+                                    <td>Personagens</td>
+                                    <td>Classes</td>
+                                    <td>Itens</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Adept.webp" class="SpriteIcon"></center></td>
+                                    <td>Adepto</td>
+                                    <td>(Velocidade de Ataque)% chance de atacar mais uma vez.</td>
+                                    <td>Leif, Ronan, Albel e Amalda</td>
+                                    <td>Swordmaster, Sage.</td>
+                                    <td>Adepto Manual.</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Astra.webp" class="SpriteIcon"></center></td>
+                                    <td>Astra</td>
+                                    <td>(Habilidade)% chance de atacar 5 vezes.</td>
+                                    <td>Galzus, Mareeta(Obtêm no capítulo 15)</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Bargain.webp" class="SpriteIcon"></center></td>
+                                    <td>Barganhar</td>
+                                    <td>Concede 50% de desconto na loja.</td>
+                                    <td>Shannam</td>
+                                    <td></td>
+                                    <td>Manual de Barganhar(Não utilizado)</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Awareness.webp" class="SpriteIcon"></center></td>
+                                    <td>Conhecimento</td>
+                                    <td>Anula as habilidades de batalha do oponente.</td>
+                                    <td>Troude, Saias.</td>
+                                    <td></td>
+                                    <td>Manual de Conhecimento, Espada das Sombras, Espada de Mareeta, Lança da Escuridão(Não utilizado), Gae Bolg(Não utilizado), Gugnir(Não utilizado)</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Charge.webp" class="SpriteIcon"></center></td>
+                                    <td>Cobrar</td>
+                                    <td>Ativa outra rodada de combate se a vida e velocidade de ataque do usuário for maior que a do oponente.</td>
+                                    <td>Dagdar, Selphina, Xavier, Conomor</td>
+                                    <td>Cavaleiro Mestre(Não utilizado).</td>
+                                    <td>Manual de Cobrar.</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Charisma.webp" class="SpriteIcon"></center></td>
+                                    <td>Carisma</td>
+                                    <td>Unidades aliadas no alcance de 3 blocos ganham +10% de Acerto e Esquiva.</td>
+                                    <td>Nanna, Delmud</td>
+                                    <td>Imperador</td>
+                                    <td>Espada do Rei, Gae Bolg(Não utilizado)</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Dance.webp" class="SpriteIcon"></center></td>
+                                    <td>Dançar</td>
+                                    <td>Comando: Quando usado, concede outro turno ao aliado.</td>
+                                    <td></td>
+                                    <td>Dancer</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Wrath.webp" class="SpriteIcon"></center></td>
+                                    <td>Ira</td>
+                                    <td>Quando atacado, tem (Habilidade * 10) chance de lançar ataque crítico.</td>
+                                    <td>Othin, Brighton, Sara, Miranda, Xavier</td>
+                                    <td>Berserker</td>
+                                    <td>Manual da Ira, Espada Beo, Gae Bolg(Não utilizado), Gugnir(Não utilizado)</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Luna.webp" class="SpriteIcon"></center></td>
+                                    <td>Lua</td>
+                                    <td>(Habilidade)% de chance de ignorar defesa do alvo. Garante o acerto.</td>
+                                    <td>Galzus, Mareeta</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Miracle.webp" class="SpriteIcon"></center></td>
+                                    <td>Milagre</td>
+                                    <td>(Sorte*3)% chance de não morrer neste combate.</td>
+                                    <td>Finn, Ilios, Sara</td>
+                                    <td>Falcon Knight(Não utilizado)</td>
+                                    <td>Espada Sagrada, Espada de Bragi, Manual do Milagre(Não utilizado)</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Paragon.webp" class="SpriteIcon"></center></td>
+                                    <td>Paragon</td>
+                                    <td>O usuário recebe o dobro de experiência.</td>
+                                    <td>Homer, Sara</td>
+                                    <td></td>
+                                    <td>Espada Elite, Manual de Elite, Gugnir(Não utilizado)</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Pavise.webp" class="SpriteIcon"></center></td>
+                                    <td>Pavimentar</td>
+                                    <td>(Nível)% chance de ignorar qualquer dano.</td>
+                                    <td>Xavier</td>
+                                    <td>General, Barão, Imperado(Não utilizado)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Renewal.webp" class="SpriteIcon"></center></td>
+                                    <td>Renovar</td>
+                                    <td>Restaura 5 à 10% de HP no inicio do turno.</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Steal.webp" class="SpriteIcon"></center></td>
+                                    <td>Roubar</td>
+                                    <td>Se a velocidade do usuário for maior que alvo, permite roubar itens que tenham o BLD inferior o da unidade. Permite usar arrombamento(Lockpick).</td>
+                                    <td>Lara</td>
+                                    <td>Thief, Thief Fighter</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Sol.webp" class="SpriteIcon"></center></td>
+                                    <td>Sol</td>
+                                    <td>(Habilidade)% chance de se curar baseado no dano. Garante acerto.</td>
+                                    <td>Shiva, Pahn, Ilios</td>
+                                    <td></td>
+                                    <td>Manual da Espada do Sol</td>
+                                </tr>
+                                <tr>
+                                    <td><center><img src="FE45Skills/Vantage.webp" class="SpriteIcon"></center></td>
+                                    <td>Vantagem</td>
+                                    <td>Sempre ataca primeiro.</td>
+                                    <td>Halvan, Machuya</td>
+                                    <td>Thief Fighter</td>
+                                    <td>Manual de Vantagem, Espada Beos, Dragonpike, Gae Bolg(Não utilizado), Gugnir(Não utilizado)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </details>
+                    <h1 id="Curiosidades" class="title">Curiosidades</h1>
+                    <ul class="text">
+                        <li>Fire Emblem Thracia 776 é um dos jogos com menor quantidade de vendas da franquia. Isso pode ser parcialmente atribuido à seu lançamento incomum, primeiro no console da Nintendo em 1999 e como um produto de varejo de caixa em 2000, também ao seu lançamento se dar pela época do Nintendo 64.</li>
+                        <li>Fire Emblem Thracia 776 foi o último jogo da franquia a ser lançado no século 20 e também o primeiro a ser lançado em 2000.</li>
+                        <li>Fire Emblem Thracia 776 foi o primeiro jogo da franquia que não dá ao jogador uma oportunidade de ressucitar uma unidade.</li>
+                    </ul>
+                </div>
+            </div>          
         </div>
-        <div>Detalhes profundos do jogo</div>
-        <div>Link para a Seção Spoiler</div> "Todos os personagens, quais são recrutáveis, os vilões, itens e guias"
+        <script src="javascript.js"></script>
     </body>
 </html>
